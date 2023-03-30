@@ -3,12 +3,14 @@ package com.transdev.mybus.web;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.mapstruct.Mapper;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.transdev.mybus.dto.ReservationDto;
@@ -17,9 +19,11 @@ import com.transdev.mybus.mapper.ReservationMapper;
 import com.transdev.mybus.repository.ReservationRepository;
 
 @RestController
+@RequestMapping("/api")
 public class ReservationRestController {
 
 	private ReservationRepository reservationRepository;
+	
 	private ReservationMapper reservationMapper;
 
 	public ReservationRestController(ReservationRepository reservationRepository, ReservationMapper reservationMapper) {

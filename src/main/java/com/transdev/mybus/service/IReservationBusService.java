@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.transdev.mybus.entities.Facture;
 
-public interface IReservationBus {
+public interface IReservationBusService {
 	
 	
 	void  saveFacture ();

@@ -1,8 +1,6 @@
 package com.transdev.mybus.service;
 
-import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -16,7 +14,7 @@ import com.transdev.mybus.repository.BusRepository;
 import com.transdev.mybus.repository.FactureRepository;
 import com.transdev.mybus.repository.ReservationRepository;
 
-public class ReservationBus implements IReservationBus {
+public class ReservationBusService implements IReservationBusService {
 
 	@Autowired
 	ReservationRepository reservationRepository;
